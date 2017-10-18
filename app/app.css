@@ -1,0 +1,166 @@
+body {
+/*  padding: 20px;
+  padding-top: 0px;*/
+}
+
+h1 {
+/*  border-bottom: 1px solid gray;*/
+/*  margin-top: 0;*/
+}
+
+/* View: Phone list */
+.phones {
+  list-style: none;
+}
+
+.phones li {
+  clear: both;
+  height: 165px;
+  padding-top: 15px;
+}
+
+.grid {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.thumb {
+  float: left;
+  padding:1em;
+  /*height: 100px;*/
+/*  margin: -0.5em 1em 1.5em 0;*/
+/*  padding-bottom: 1em;*/
+/*  width: 100px;*/
+}
+
+/* View: Phone detail */
+.phone {
+  background-color: white;
+  display: none;
+  float: left;
+  height: 400px;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  padding: 2em;
+  width: 400px;
+}
+
+.phone:first-child {
+  display: block;
+}
+
+.phone-images {
+  background-color: white;
+  float: left;
+/*  height: 450px;*/
+  overflow: hidden;
+  position: relative;
+/*  width: 450px;*/
+}
+
+.phone-images img {
+  max-width: 100%;
+  margin: 5%;
+}
+
+.phone-images h4 {
+  font: italic 14px/24px Georgia, serif;
+  text-align: center;
+  margin: 5%;
+}
+
+.phone-thumbs {
+  list-style: none;
+  margin: 0;
+}
+
+.phone-thumbs img {
+  height: 100px;
+  padding: 1em;
+  width: 100px;
+}
+
+.phone-thumbs li {
+  background-color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em;
+}
+
+.specs {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.specs dt {
+  font-weight: bold;
+}
+
+.specs > li {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.specs > li > span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+a {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+textarea {
+  max-width: 100%;
+}
+
+.page-num-fixed {
+  position:fixed;
+  bottom:20px;
+  width:100%;
+}
+
+.related-images {
+  width:100%;
+  display:inline-block;
+}
+
+.image-details {
+/*  margin-bottom: 5%;*/
+}
+
+.content {
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.detail-content {
+  padding-bottom: 30px;
+}
+
+span.icon { 
+  font-family: 'Glyphicons Halflings'; 
+}
+
+.tag {
+  list-style: none;
+}
+
+.tag-list {
+  padding:0px;
+  font-size:1.3em;
+}

@@ -1,0 +1,62 @@
+<div class="container-fluid content">
+
+  <search-modal></search-modal>
+
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        <h1>What are you looking for?</h1>
+        <!--         <input class="form-control" ng-model="$ctrl.query" /> -->
+          <textarea elastic ng-enter="$ctrl.submitQuery()" rows="1" class="form-control" ng-model="$ctrl.simpleInput"></textarea>
+      </p>
+
+      <p>
+<!--         <a class="btn btn-secondary" ng-click="$ctrl.suggestSynonyms()" ng-disabled="$ctrl.simpleInput.split(',').length > 1">Suggest Synonyms</a> -->
+        <a class="btn btn-secondary" ng-click="$ctrl.suggestSynonyms()" ng-class="{'disabled': $ctrl.simpleInput.split(',').length > 1}">Suggest Synonyms</a>
+
+      </p>
+
+      <p>
+        Sort by: 
+        <a ng-class="($ctrl.orderProp=='relevance') ? 'selected' : ''" ng-click="$ctrl.orderProp='relevance'; $ctrl.submitQuery()">Relevance</a> 
+        &middot; 
+        <a ng-class="($ctrl.orderProp=='interestingness-desc') ? 'selected' : ''" ng-click="$ctrl.orderProp='interestingness-desc'; $ctrl.submitQuery()">Interestingness</a> 
+        &middot; 
+        <a ng-class="($ctrl.orderProp=='date-posted-desc') ? 'selected' : ''" ng-click="$ctrl.orderProp='date-posted-desc'; $ctrl.submitQuery()">Date Posted</a> 
+      </p>
+
+
+      <div class="page-num-fixed">
+      <p>
+<!--         <a class="btn btn-primary btn-sm" href="#!/images/page/{{$ctrl.pageNum - 1}}/sortby/{{$ctrl.orderProp}}/query/{{$ctrl.query}}" ng-disabled="{{$ctrl.pageNum <= 1}}"><<</a>
+        <a class="btn btn-primary btn-sm" href="#!/images/page/{{$ctrl.pageNum + 1}}/sortby/{{$ctrl.orderProp}}/query/{{$ctrl.query}}" ng-disabled="$ctrl.disableNext">>></a> -->
+        <a class="btn btn-primary btn-sm" href="#!/images/page/{{$ctrl.pageNum - 1}}/sortby/{{$ctrl.orderProp}}/query/{{$ctrl.query}}" ng-class="{'disabled': {{$ctrl.pageNum <= 1}}}"><<</a>
+        <a class="btn btn-primary btn-sm" href="#!/images/page/{{$ctrl.pageNum + 1}}/sortby/{{$ctrl.orderProp}}/query/{{$ctrl.query}}" ng-class="{'disabled': $ctrl.disableNext}">>></a>
+      </p>
+
+      <p><em>Page {{$ctrl.pageNum}} of {{$ctrl.maxPageNum}}</em></p>
+    </div>
+
+      
+    </div>
+
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="grid">
+        <li ng-repeat="phone in $ctrl.phones | orderBy:$ctrl.orderProp" class="phone-list-item">
+<!--         class="thumbnail phone-list-item"> -->
+        <div class="thumb">
+          <a href="#!/images/detail/{{phone.id}}"><img ng-src="{{$ctrl.getImgUrl(phone)}}"/></a>
+        </div>
+<!--         <a href="#!/phones/detail/{{phone.id}}">{{phone.title}}</a> -->
+      </li>
+    </ul>
+
+  </div>
+</div>
+</div>
+
+

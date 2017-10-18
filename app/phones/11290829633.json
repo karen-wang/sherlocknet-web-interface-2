@@ -1,0 +1,154 @@
+{  
+   "photo":{  
+      "id":"11290829633",
+      "secret":"0654984766",
+      "server":"5520",
+      "farm":6,
+      "dateuploaded":"1457597259",
+      "isfavorite":0,
+      "license":7,
+      "safety_level":0,
+      "rotation":0,
+      "originalsecret":"d2dcf0a95a",
+      "originalformat":"jpg",
+      "owner":{  
+         "nsid":"12403504@N02",
+         "username":"The British Library",
+         "realname":"",
+         "location":"",
+         "iconserver":"7437",
+         "iconfarm":8,
+         "path_alias":"britishlibrary"
+      },
+      "title":{  
+         "_content":"Image taken from page 21 of 'La Vie à Montmartre. Illustrations de P. Vidal'"
+      },
+      "description":{  
+         "_content":"Image taken from:\n\n<strong>Title<\/strong>: &quot;La Vie à Montmartre. Illustrations de P. Vidal&quot;\n<strong>Author<\/strong>: MONTORGUEIL, Georges - pseud. [i.e. Octave Lebesque.]\n<strong>Contributor<\/strong>: VIDAL, Pierre - Artist\n<strong>Shelfmark<\/strong>: &quot;British Library HMNTS 10172.k.10.&quot;\n<strong>Page<\/strong>: 21\n<strong>Place of Publishing<\/strong>: Paris\n<strong>Date of Publishing<\/strong>: 1899\n<strong>Issuance<\/strong>: monographic\n<strong>Identifier<\/strong>: 002535622\n\n<strong>Explore:<\/strong>\nFind <a href=\"http:\/\/explore.bl.uk\/primo_library\/libweb\/action\/search.do?cs=frb&amp;doc=BLL01002535622&amp;dscnt=1&amp;scp.scps=scope:(BLCONTENT)&amp;frbg=&amp;tab=local_tab&amp;srt=rank&amp;ct=search&amp;mode=Basic&amp;dum=true&amp;tb=t&amp;indx=1&amp;vl(freeText0)=002535622&amp;fn=search&amp;vid=BLVU1\" rel=\"nofollow\">this item in the British Library catalogue, 'Explore'.<\/a>\n<a href=\"http:\/\/access.bl.uk\/item\/pdf\/lsidyv3622e05a\" rel=\"nofollow\">Download the PDF for this book (volume: 0)<\/a> Image found on book scan 21 (NB not necessarily a page number)\nDownload the OCR-derived text for this volume: <a href=\"https:\/\/blmc.blob.core.windows.net\/ocrplaintext\/002535622_0.txt\" rel=\"nofollow\">(plain text)<\/a> or <a href=\"https:\/\/blmc.blob.core.windows.net\/ocrjson\/002535622_0_text.json\" rel=\"nofollow\">(json)<\/a>\n\nClick <strong><a href=\"http:\/\/www.flickr.com\/photos\/britishlibrary\/tags\/sysnum002535622\">here<\/a><\/strong> to see all the illustrations in this book and click <strong><a href=\"http:\/\/www.flickr.com\/photos\/britishlibrary\/tags\/date1899\">here<\/a><\/strong> to browse other illustrations published in books in the same year.\n\n<strong><a href=\"http:\/\/bit.ly\/1b3VS7i\" rel=\"nofollow\">Order a higher quality version from here<\/a>.<\/strong>\n\n"
+      },
+      "visibility":{  
+         "ispublic":1,
+         "isfriend":0,
+         "isfamily":0
+      },
+      "dates":{  
+         "posted":"1457597259",
+         "taken":"2013-12-09 14:54:32",
+         "takengranularity":0,
+         "takenunknown":0,
+         "lastupdate":"1458197243"
+      },
+      "views":"1322",
+      "editability":{  
+         "cancomment":0,
+         "canaddmeta":0
+      },
+      "publiceditability":{  
+         "cancomment":1,
+         "canaddmeta":1
+      },
+      "usage":{  
+         "candownload":1,
+         "canblog":0,
+         "canprint":0,
+         "canshare":1
+      },
+      "comments":{  
+         "_content":0
+      },
+      "notes":{  
+         "note":[  
+
+         ]
+      },
+      "people":{  
+         "haspeople":0
+      },
+      "tags":{  
+         "tag":[  
+            {  
+               "id":"12383156-11290829633-137769045",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"bldigital",
+               "_content":"bldigital",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-151310916",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"date:1899",
+               "_content":"date1899",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-147195654",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"pubplace:Paris",
+               "_content":"pubplaceparis",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-136904",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"public_domain",
+               "_content":"publicdomain",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-163816145",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"sysnum:002535622",
+               "_content":"sysnum002535622",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-163339253",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"MONTORGUEIL, Georges pseud. [i.e. Octave Lebesque.]",
+               "_content":"montorgueilgeorgespseudieoctavelebesque",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-20924",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"medium",
+               "_content":"medium",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-21849367",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"vol:0",
+               "_content":"vol0",
+               "machine_tag":0
+            },
+            {  
+               "id":"12383156-11290829633-2011795",
+               "author":"12403504@N02",
+               "authorname":"The British Library",
+               "raw":"page:21",
+               "_content":"page21",
+               "machine_tag":0
+            }
+         ]
+      },
+      "urls":{  
+         "url":[  
+            {  
+               "type":"photopage",
+               "_content":"https:\/\/www.flickr.com\/photos\/britishlibrary\/11290829633\/"
+            }
+         ]
+      },
+      "media":"photo"
+   },
+   "stat":"ok"
+}

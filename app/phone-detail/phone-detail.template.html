@@ -1,0 +1,53 @@
+<!-- <md-content class="md-padding"> -->
+<div class="container-fluid detail-content">
+
+<!--   <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
+    <md-nav-item md-nav-href="#" name="home"><md-icon md-font-library="material-icons" style="color:rgba(0,0,0,0.54);">home</md-icon></md-nav-item>
+    <md-nav-item md-nav-href="#!/about" name="about">About</md-nav-item>
+    <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+    <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+    <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+    -->
+<!--   </md-nav-bar> -->
+
+<div class="col-md-7">
+<div class="phone-images">
+	<a href="https://farm{{$ctrl.photo.farm}}.staticflickr.com/{{$ctrl.photo.server}}/{{$ctrl.photo.id}}_{{$ctrl.photo.secret}}_b.jpg" target="_blank">
+  <img ng-src="{{$ctrl.url}}">
+	</a>
+  <h4 ng-bind-html="$ctrl.titleHTML"></h4>
+  <h4 ng-if="$ctrl.caption">"{{$ctrl.caption}}" <span class="tag tag-pill tag-warning">SherlockNet Caption (beta)</span></h4>
+</div>
+</div>
+
+<!-- <p ng-bind-html="$ctrl.descHTML"></p> -->
+
+<div class="col-md-5 image-details">
+
+<div class="related-images">
+<h3>Related Images</h3>
+<div ng-repeat="img in $ctrl.relatedImgs track by $index" >
+	<a href="#!/images/detail/{{img.id}}" class="thumb">
+	  <img ng-src="{{img.url}}"/>
+	</a>
+</div>
+</div>
+
+<h3>Tags</h3>
+<ul class="tag-list">
+  <li class="tag" ng-repeat="tag in $ctrl.tags">
+    <a href="#!/images/page/1/sortby/relevance/query/&tags={{tag._content}}">
+      <span ng-if="tag._content.indexOf('sherlocknet') > -1" class="tag tag-primary">{{tag._content}}</span>
+      <span ng-if="tag._content.indexOf('sherlocknet') === -1" class="tag tag-default">{{tag._content}}</span>
+    </a>
+  	<!-- <a href="#!/images/page/1/sortby/relevance/query/{{tag._content}}">{{tag._content}}</a> -->
+  </li>
+</ul>
+
+<h3>Source</h3>
+<a href="{{$ctrl.photoPage}}" target="_blank">{{$ctrl.photoPage}}</a>
+
+</div>
+
+</div>
+<!-- </md-content> -->

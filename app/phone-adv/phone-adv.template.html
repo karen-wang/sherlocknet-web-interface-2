@@ -1,0 +1,76 @@
+<div class="container-fluid">
+
+<div class="col-md-7">
+
+<h1>Advanced Search</h1>
+
+<form>
+	<!-- Tags -->
+	<div class="form-group">
+	  <label for="tags">Tags</label>
+	  <input type="tags" class="form-control" id="tags" aria-describedby="tagHelp" ng-model="$ctrl.tags">
+	  <small id="tagHelp" class="form-text text-muted">Enter tags separated by commas.</small>
+	</div>
+
+	<fieldset class="form-group">
+	  <label for="tagMode">Tag Mode</label>
+	  <div class="form-check">
+	    <label class="form-check-label">
+	      <input type="radio" class="form-check-input" name="tagMode" value="any" ng-model="$ctrl.tagMode">
+	      Any
+	    </label>
+	  </div>
+	  <div class="form-check">
+	  <label class="form-check-label">
+	      <input type="radio" class="form-check-input" name="tagMode" value="all" ng-model="$ctrl.tagMode">
+	      All
+	    </label>
+	    <small id="tagModeHelp" class="form-text text-muted">Any = OR combination of tags. All = AND combination of tags.</small>
+	  </div>
+	</fieldset>
+
+	<!-- Machine Tags -->
+	<div class="form-group">
+	  <label for="tags">Machine Tags</label>
+	  <input type="tags" class="form-control" id="tags" aria-describedby="tagHelp" ng-model="$ctrl.machineTags">
+	  <small id="tagHelp" class="form-text text-muted">Enter machine tags separated by commas.</small>
+	  <small class="form-text text-muted">
+	  	<ul>
+	  	<li>Find photos using the 'dc' namespace => dc:</li>
+	  	<li>Find photos with a title in the 'dc' namespace => dc:title=</li>
+	  	<li>Find photos titled "mr. camera" in the 'dc' namespace => dc:title=mr. camera</li>
+	  	<li>Find photos whose value is "mr. camera" => *:*=mr. camera</li>
+	  	<li>Find photos that have a title, in any namespace => *:title=</li>
+	  	<li>Find photos that have a title, in any namespace, whose value is "mr. camera" => *:title=mr. camera</li>
+	  	<li>Find photos, in the 'dc' namespace whose value is "mr. camera" => dc:*=mr. camera</li>
+	  </ul>
+	  </small>
+	</div>
+
+	<fieldset class="form-group">
+	  <label for="machineTagMode">Machine Tag Mode</label>
+	  <div class="form-check">
+	    <label class="form-check-label">
+	      <input type="radio" class="form-check-input" name="machineTagMode" value="any" ng-model="$ctrl.machineTagMode">
+	      Any
+	    </label>
+	  </div>
+	  <div class="form-check">
+	  <label class="form-check-label">
+	      <input type="radio" class="form-check-input" name="machineTagMode" value="all" ng-model="$ctrl.machineTagMode">
+	      All
+	    </label>
+	    <small id="tagModeHelp" class="form-text text-muted">Any = OR combination of tags. All = AND combination of tags.</small>
+	  </div>
+	</fieldset>
+	<button ng-click="$ctrl.submitAdvSearch()" type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</div>
+
+
+
+<div class="col-md-5">
+</div>
+
+</div>
